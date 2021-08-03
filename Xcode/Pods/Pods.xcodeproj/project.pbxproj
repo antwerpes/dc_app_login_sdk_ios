@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DC3C6ABEC8A73E8BB953C553E596798 /* Pods-DocCheckAppLoginSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C5737EA60C44DAA141E66DE045C6049 /* Pods-DocCheckAppLoginSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A912C1FA0672ED7E51689777F33BDCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7E777DCF231D561C056B6E0223FA46C1 /* DocCheckLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0372FC496587086E236BDC783D786EB1 /* DocCheckLogin.swift */; };
+		A4475B71CC677BD81FFC74A7954341D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A7E2459890E17E67FCED2F7008A5C17B /* DocCheckAppLoginSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72874168234737C48E21996F2DF004EA /* DocCheckAppLoginSDK-dummy.m */; };
+		B7C278E5261C44B500EB8B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7C278E4261C44AA00EB8B3A /* Assets.xcassets */; };
+		B7C27900261C714800EB8B3A /* URLSession+Synchronous.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C278FF261C714800EB8B3A /* URLSession+Synchronous.swift */; };
+		BE4224F9935FB199C59C4145F69AF225 /* Pods-DocCheckAppLoginSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3AE21B8847156CF6EB1F76D7AAAA3 /* Pods-DocCheckAppLoginSDK_Tests-dummy.m */; };
+		D14EDD10CAD7E8D5063DD3618BC52CF9 /* DocCheckAppLoginSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B009A350ECB739B591F33CF78807D08C /* DocCheckAppLoginSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A20D1B0E19F9FFB393AC48921048DAAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7A098016CF026B83DED5771795E5590;
+			remoteInfo = DocCheckAppLoginSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0372FC496587086E236BDC783D786EB1 /* DocCheckLogin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocCheckLogin.swift; path = Sources/DocCheckAppLoginSDK/Classes/DocCheckLogin.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		377945E92400DDD9FBBD289041D39DC2 /* DocCheckAppLoginSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DocCheckAppLoginSDK.release.xcconfig; sourceTree = "<group>"; };
+		3A5DEDF0D2C463DC41E8631BEB123C10 /* Pods-DocCheckAppLoginSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DocCheckAppLoginSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		72874168234737C48E21996F2DF004EA /* DocCheckAppLoginSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DocCheckAppLoginSDK-dummy.m"; sourceTree = "<group>"; };
+		75C36F6C1A66A0C04B1A6073C8792B12 /* DocCheckAppLoginSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DocCheckAppLoginSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7938B50D1110937A2C76DDB6D1663D70 /* DocCheckAppLoginSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DocCheckAppLoginSDK.modulemap; sourceTree = "<group>"; };
+		7C5737EA60C44DAA141E66DE045C6049 /* Pods-DocCheckAppLoginSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DocCheckAppLoginSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7FF545F432E974DA0B08FA0B1ED661FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		87535A3947CB9B6D5B98CD9AB4A2C108 /* Pods-DocCheckAppLoginSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DocCheckAppLoginSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		8E770D374657F71268E0B2228A7712B6 /* Pods-DocCheckAppLoginSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DocCheckAppLoginSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93E5648A0DCD542B14389616E5D127CC /* Pods-DocCheckAppLoginSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DocCheckAppLoginSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		97E50A37CDFC8291CC19A1575B8AFC61 /* DocCheckAppLoginSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DocCheckAppLoginSDK-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B009A350ECB739B591F33CF78807D08C /* DocCheckAppLoginSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DocCheckAppLoginSDK-umbrella.h"; sourceTree = "<group>"; };
+		B7C278E4261C44AA00EB8B3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/DocCheckAppLoginSDK/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		B7C278FF261C714800EB8B3A /* URLSession+Synchronous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "URLSession+Synchronous.swift"; path = "Sources/DocCheckAppLoginSDK/Classes/URLSession+Synchronous.swift"; sourceTree = "<group>"; };
+		B861E07BCCD500CF3BE8617DD1681AF7 /* Pods_DocCheckAppLoginSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocCheckAppLoginSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE1CA43D0653CBFB431E0064DBB91FF /* Pods-DocCheckAppLoginSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DocCheckAppLoginSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAC6E702E646137582DE862E122A00FF /* DocCheckAppLoginSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DocCheckAppLoginSDK.debug.xcconfig; sourceTree = "<group>"; };
+		CAD18738C01547030D6D725C7B970FAF /* Pods-DocCheckAppLoginSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DocCheckAppLoginSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBCC6672A787C10CD94DF6B0F33A6D0A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CF389F8A0E6505546455CEC4F0055EC7 /* DocCheckAppLoginSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DocCheckAppLoginSDK-prefix.pch"; sourceTree = "<group>"; };
+		D6BD658056BB7A6E35C802A7F5DEC537 /* DocCheckAppLoginSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DocCheckAppLoginSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E7B26DE0DB643027D96C8A4FC2465E84 /* Pods-DocCheckAppLoginSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DocCheckAppLoginSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		ECB3AE21B8847156CF6EB1F76D7AAAA3 /* Pods-DocCheckAppLoginSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DocCheckAppLoginSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7142AF8C0FFC9819A26A9F25191118A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A912C1FA0672ED7E51689777F33BDCF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		914670AA0516AD15A2EA8FCECD1DD01A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4475B71CC677BD81FFC74A7954341D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DC81D8B498D77B50C990D666FC12502 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D6BD658056BB7A6E35C802A7F5DEC537 /* DocCheckAppLoginSDK.podspec */,
+				7FF545F432E974DA0B08FA0B1ED661FB /* LICENSE */,
+				CBCC6672A787C10CD94DF6B0F33A6D0A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3B306539F1EB1B25A2FD6DD13C46B651 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				937A0765522C863AEAEBEF859B770BE1 /* DocCheckAppLoginSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		64AF5F9F0790DAEF2C00AAFF97DA081C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7938B50D1110937A2C76DDB6D1663D70 /* DocCheckAppLoginSDK.modulemap */,
+				72874168234737C48E21996F2DF004EA /* DocCheckAppLoginSDK-dummy.m */,
+				97E50A37CDFC8291CC19A1575B8AFC61 /* DocCheckAppLoginSDK-Info.plist */,
+				CF389F8A0E6505546455CEC4F0055EC7 /* DocCheckAppLoginSDK-prefix.pch */,
+				B009A350ECB739B591F33CF78807D08C /* DocCheckAppLoginSDK-umbrella.h */,
+				CAC6E702E646137582DE862E122A00FF /* DocCheckAppLoginSDK.debug.xcconfig */,
+				377945E92400DDD9FBBD289041D39DC2 /* DocCheckAppLoginSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Xcode/Pods/Target Support Files/DocCheckAppLoginSDK";
+			sourceTree = "<group>";
+		};
+		8C07DCFA05E215C150A9130B65F3CABE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D52BA943B48BB0395BA45899C12A4CA2 /* Pods-DocCheckAppLoginSDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		937A0765522C863AEAEBEF859B770BE1 /* DocCheckAppLoginSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0372FC496587086E236BDC783D786EB1 /* DocCheckLogin.swift */,
+				1DC81D8B498D77B50C990D666FC12502 /* Pod */,
+				64AF5F9F0790DAEF2C00AAFF97DA081C /* Support Files */,
+				B7C278E4261C44AA00EB8B3A /* Assets.xcassets */,
+				B7C278FF261C714800EB8B3A /* URLSession+Synchronous.swift */,
+			);
+			name = DocCheckAppLoginSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CE18ECF52344E23850917E779D79018E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75C36F6C1A66A0C04B1A6073C8792B12 /* DocCheckAppLoginSDK.framework */,
+				B861E07BCCD500CF3BE8617DD1681AF7 /* Pods_DocCheckAppLoginSDK_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				3B306539F1EB1B25A2FD6DD13C46B651 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				CE18ECF52344E23850917E779D79018E /* Products */,
+				8C07DCFA05E215C150A9130B65F3CABE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D52BA943B48BB0395BA45899C12A4CA2 /* Pods-DocCheckAppLoginSDK_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E7B26DE0DB643027D96C8A4FC2465E84 /* Pods-DocCheckAppLoginSDK_Tests.modulemap */,
+				8E770D374657F71268E0B2228A7712B6 /* Pods-DocCheckAppLoginSDK_Tests-acknowledgements.markdown */,
+				CAD18738C01547030D6D725C7B970FAF /* Pods-DocCheckAppLoginSDK_Tests-acknowledgements.plist */,
+				ECB3AE21B8847156CF6EB1F76D7AAAA3 /* Pods-DocCheckAppLoginSDK_Tests-dummy.m */,
+				87535A3947CB9B6D5B98CD9AB4A2C108 /* Pods-DocCheckAppLoginSDK_Tests-frameworks.sh */,
+				93E5648A0DCD542B14389616E5D127CC /* Pods-DocCheckAppLoginSDK_Tests-Info.plist */,
+				7C5737EA60C44DAA141E66DE045C6049 /* Pods-DocCheckAppLoginSDK_Tests-umbrella.h */,
+				BCE1CA43D0653CBFB431E0064DBB91FF /* Pods-DocCheckAppLoginSDK_Tests.debug.xcconfig */,
+				3A5DEDF0D2C463DC41E8631BEB123C10 /* Pods-DocCheckAppLoginSDK_Tests.release.xcconfig */,
+			);
+			name = "Pods-DocCheckAppLoginSDK_Tests";
+			path = "Target Support Files/Pods-DocCheckAppLoginSDK_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1601DA125F533476D7D0D08C8F66E98F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC3C6ABEC8A73E8BB953C553E596798 /* Pods-DocCheckAppLoginSDK_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9144E5576AA4F869BF7DEFEC6E7F6392 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14EDD10CAD7E8D5063DD3618BC52CF9 /* DocCheckAppLoginSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C7A098016CF026B83DED5771795E5590 /* DocCheckAppLoginSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F697B5832D5D6DC84B57537F200EA88 /* Build configuration list for PBXNativeTarget "DocCheckAppLoginSDK" */;
+			buildPhases = (
+				9144E5576AA4F869BF7DEFEC6E7F6392 /* Headers */,
+				C2FB5DF6C9F6B9EE8C56EEF0FDFDABC8 /* Sources */,
+				7142AF8C0FFC9819A26A9F25191118A6 /* Frameworks */,
+				1F933B095D44D0C7BF458DA5DAC2E12C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocCheckAppLoginSDK;
+			productName = DocCheckAppLoginSDK;
+			productReference = 75C36F6C1A66A0C04B1A6073C8792B12 /* DocCheckAppLoginSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB2FFBFA2E92FD5B3CDE9D31000D51BA /* Pods-DocCheckAppLoginSDK_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185509B5FD60ABE1ABC81D4F5C8C34B9 /* Build configuration list for PBXNativeTarget "Pods-DocCheckAppLoginSDK_Tests" */;
+			buildPhases = (
+				1601DA125F533476D7D0D08C8F66E98F /* Headers */,
+				2EEF0F878D875F57EFFB561C68AAFE8D /* Sources */,
+				914670AA0516AD15A2EA8FCECD1DD01A /* Frameworks */,
+				B9430219A73EE2E96D9ED507F46C1D8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CB8E1B5D7B59ABB614940E1D7133082 /* PBXTargetDependency */,
+			);
+			name = "Pods-DocCheckAppLoginSDK_Tests";
+			productName = "Pods-DocCheckAppLoginSDK_Tests";
+			productReference = B861E07BCCD500CF3BE8617DD1681AF7 /* Pods_DocCheckAppLoginSDK_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CE18ECF52344E23850917E779D79018E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7A098016CF026B83DED5771795E5590 /* DocCheckAppLoginSDK */,
+				DB2FFBFA2E92FD5B3CDE9D31000D51BA /* Pods-DocCheckAppLoginSDK_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F933B095D44D0C7BF458DA5DAC2E12C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C278E5261C44B500EB8B3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9430219A73EE2E96D9ED507F46C1D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EEF0F878D875F57EFFB561C68AAFE8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4224F9935FB199C59C4145F69AF225 /* Pods-DocCheckAppLoginSDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FB5DF6C9F6B9EE8C56EEF0FDFDABC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E2459890E17E67FCED2F7008A5C17B /* DocCheckAppLoginSDK-dummy.m in Sources */,
+				B7C27900261C714800EB8B3A /* URLSession+Synchronous.swift in Sources */,
+				7E777DCF231D561C056B6E0223FA46C1 /* DocCheckLogin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CB8E1B5D7B59ABB614940E1D7133082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DocCheckAppLoginSDK;
+			target = C7A098016CF026B83DED5771795E5590 /* DocCheckAppLoginSDK */;
+			targetProxy = A20D1B0E19F9FFB393AC48921048DAAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B8244F1BC68E57F59F63E91DD912FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC6E702E646137582DE862E122A00FF /* DocCheckAppLoginSDK.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DocCheckAppLoginSDK/DocCheckAppLoginSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DocCheckAppLoginSDK/DocCheckAppLoginSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DocCheckAppLoginSDK/DocCheckAppLoginSDK.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doccheck.apploginsdk;
+				PRODUCT_MODULE_NAME = DocCheckAppLoginSDK;
+				PRODUCT_NAME = DocCheckAppLoginSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94E53A10DA8699FCB3751E554C7C834B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5DEDF0D2C463DC41E8631BEB123C10 /* Pods-DocCheckAppLoginSDK_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DocCheckAppLoginSDK_Tests/Pods-DocCheckAppLoginSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DocCheckAppLoginSDK_Tests/Pods-DocCheckAppLoginSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A883A4407B2F21594F47695AF1B19915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 377945E92400DDD9FBBD289041D39DC2 /* DocCheckAppLoginSDK.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DocCheckAppLoginSDK/DocCheckAppLoginSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DocCheckAppLoginSDK/DocCheckAppLoginSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DocCheckAppLoginSDK/DocCheckAppLoginSDK.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doccheck.apploginsdk;
+				PRODUCT_MODULE_NAME = DocCheckAppLoginSDK;
+				PRODUCT_NAME = DocCheckAppLoginSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C2C56D848E919C4B06D10E38F5E3A973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCE1CA43D0653CBFB431E0064DBB91FF /* Pods-DocCheckAppLoginSDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DocCheckAppLoginSDK_Tests/Pods-DocCheckAppLoginSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DocCheckAppLoginSDK_Tests/Pods-DocCheckAppLoginSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		185509B5FD60ABE1ABC81D4F5C8C34B9 /* Build configuration list for PBXNativeTarget "Pods-DocCheckAppLoginSDK_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2C56D848E919C4B06D10E38F5E3A973 /* Debug */,
+				94E53A10DA8699FCB3751E554C7C834B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F697B5832D5D6DC84B57537F200EA88 /* Build configuration list for PBXNativeTarget "DocCheckAppLoginSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B8244F1BC68E57F59F63E91DD912FFA /* Debug */,
+				A883A4407B2F21594F47695AF1B19915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

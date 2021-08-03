@@ -1,0 +1,7 @@
+use_frameworks!
+
+target 'DocCheckAppLoginSDK_Tests' do
+  pod 'DocCheckAppLoginSDK', :path => '../'
+  
+  
+end

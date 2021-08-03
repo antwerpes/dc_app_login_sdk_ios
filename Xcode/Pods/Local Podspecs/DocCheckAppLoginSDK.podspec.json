@@ -1,0 +1,22 @@
+{
+  "name": "DocCheckAppLoginSDK",
+  "version": "0.1.0",
+  "summary": "A short description of DocCheckAppLoginSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/f816a478d3eff9d13c32666df603fb85b2234a82/DocCheckAppLoginSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "f816a478d3eff9d13c32666df603fb85b2234a82": "benjamin.werker@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/f816a478d3eff9d13c32666df603fb85b2234a82/DocCheckAppLoginSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DocCheckAppLoginSDK/Classes/**/*"
+}

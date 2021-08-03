@@ -1,0 +1,6 @@
+framework module Pods_DocCheckAppLoginSDK_Tests {
+  umbrella header "Pods-DocCheckAppLoginSDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
