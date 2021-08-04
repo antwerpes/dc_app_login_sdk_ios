@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DocCheckAppLoginSDK'
-  s.version          = '0.1.1'
+  s.version          = '0.1.3'
   s.summary          = 'Official DocChecks SDK in Swift to integrate DocCheck App Login'
   s.description      = 'The Official DocCheck SDK offers the option for an easy integration of the App Login for customers with a valid contract.'
 
