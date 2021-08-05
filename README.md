@@ -18,10 +18,14 @@ DocCheckAppLogin is available through the [CocoaPods](https://cocoapods.org) dep
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'DocCheckAppLoginSDK', :git => 'https://github.com/antwerpes/dc_app_login_sdk_ios.git', :tag => '0.1.1'
+pod 'DocCheckAppLoginSDK'
 ```
 
-This package is not yet published on CocoaPods therefore needs to be linked with tagged versions in this repository.
+For the case that the SDK is not yet listed on cocoapods you can always fall back to getting a version directly from this repository like this:
+
+```ruby
+pod 'DocCheckAppLoginSDK', :git => 'https://github.com/antwerpes/dc_app_login_sdk_ios.git', :tag => '0.1.3'
+```
 
 ### Swift Package Manager - experimental
 

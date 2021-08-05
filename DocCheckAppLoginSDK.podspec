@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://www.doccheck.com'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'DocCheck Community GmbH' => 'app-login@doccheck.com' }
+  s.author           = { 'DocCheck Community GmbH' => 'industry@doccheck.com' }
   s.source           = { :git => 'https://github.com/antwerpes/dc_app_login_sdk_ios.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '12.0'
