@@ -6,9 +6,9 @@ The DocCheck App Login SDK provides you with a simple to use integration of the 
 
 ## Requirements
 
-- iOS 12.0+
+- iOS 11.0+
 - Xcode 12+
-- Swift 5.1+
+- Swift 5.0+
 
 ## Installation
 
