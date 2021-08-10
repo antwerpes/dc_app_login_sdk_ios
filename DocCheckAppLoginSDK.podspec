@@ -8,11 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DocCheckAppLoginSDK'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Official DocChecks SDK in Swift to integrate DocCheck App Login'
   s.description      = 'The Official DocCheck SDK offers the option for an easy integration of the App Login for customers with a valid contract.'
 
-  s.homepage         = 'https://www.doccheck.com'
+  s.homepage         = 'https://github.com/antwerpes/dc_app_login_sdk_ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'DocCheck Community GmbH' => 'industry@doccheck.com' }
   s.source           = { :git => 'https://github.com/antwerpes/dc_app_login_sdk_ios.git', :tag => s.version.to_s }
