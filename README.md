@@ -1,7 +1,8 @@
 # DocCheckAppLogin
 
-[![Version](https://img.shields.io/cocoapods/v/DocCheckAppLogin.svg?style=flat)](https://cocoapods.org/pods/DocCheckAppLoginSDK)
-[![Platform](https://img.shields.io/cocoapods/p/DocCheckAppLogin.svg?style=flat)](https://cocoapods.org/pods/DocCheckAppLoginSDK)
+![Cocoapods](https://img.shields.io/cocoapods/v/DocCheckAppLoginSDK)
+![Cocoapods platforms](https://img.shields.io/cocoapods/p/DocCheckAppLoginSDK)
+
 The DocCheck App Login SDK provides you with a simple to use integration of the authentication through DocCheck. This is done by providing a ViewController which wraps the Web flow and handles callbacks for the authentication.
 
 ## Requirements
