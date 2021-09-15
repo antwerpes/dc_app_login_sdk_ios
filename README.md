@@ -11,6 +11,16 @@ The DocCheck App Login SDK provides you with a simple to use integration of the 
 - Xcode 12+
 - Swift 5.0+
 
+### DocCheck Login ID
+In order to ensure smooth integration and functioning always adhere to using the respective framework. Before you can implement the DocCheck Login in your app, you will need to set up a new login in CReaM (http://crm.doccheck.com/com/). For detailed instructions please read the technical manual in the download section of https://more.doccheck.com/en/industry/ (chapter 2.2.3). When a new login has been created, please add the bundle identifier (for iOS) or the package name (for Android) in the destination URL. This process in general runs as follows: topleveldomain.companyname.appname 
+
+Example for input in the target URL in CReaM: 
+```shell
+doccheck://login?appid=bundleidentifier
+```
+### DocCheck License
+For mobile applications a mobile license is required.To get more details about the different packages (basic, economy and business) as well as booking process please contact app.industry@doccheck.com. 
+
 ## Installation
 
 ### CocoaPods
@@ -80,4 +90,4 @@ An example project with integration instructions can be found in the [Example Re
 |state           |valid    |Oauth2 parameter                                                           |e.g. eHxI902CC3doao1                                                 |economy + business|
 |dc_agreement    |valid    |status of confirmation of the data transfer consent form                   |0 = not confirmed; 1 = confirmed                                     |business          |
 
-Please note that additional parameters can be delivered in case of valid consent for data transfer in combination with an implemented business license. For more Details, please check the OAuth2 documentation. Thats one can be reuqested via industry@doccheck.com. 
+Please note that additional parameters can be delivered in case of valid consent for data transfer in combination with an implemented business license. For more Details, please check the OAuth2 documentation. Thats one can be reuqested via app.industry@doccheck.com. 
