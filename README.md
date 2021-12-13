@@ -12,14 +12,18 @@ The DocCheck App Login SDK provides you with a simple to use integration of the 
 - Swift 5.0+
 
 ### DocCheck Login ID
-In order to ensure smooth integration and functioning always adhere to using the respective framework. Before you can implement the DocCheck Login in your app, you will need to set up a new login in CReaM (http://crm.doccheck.com/com/). For detailed instructions please read the technical manual in the download section of https://more.doccheck.com/en/industry/ (chapter 2.2.3). When a new login has been created, please add the bundle identifier (for iOS) or the package name (for Android) in the destination URL. This process in general runs as follows: topleveldomain.companyname.appname 
 
-Example for input in the target URL in CReaM: 
+In order to ensure smooth integration and functioning always adhere to using the respective framework. Before you can implement the DocCheck Login in your app, you will need to set up a new login in CReaM (<http://crm.doccheck.com/com/>). For detailed instructions please read the technical manual in the download section of <https://more.doccheck.com/en/industry/> (chapter 2.2.3). When a new login has been created, please add the bundle identifier (for iOS) or the package name (for Android) in the destination URL. This process in general runs as follows: topleveldomain.companyname.appname
+
+Example for input in the target URL in CReaM:
+
 ```shell
 doccheck://login?appid=bundleidentifier
 ```
+
 ### DocCheck License
-For mobile applications a mobile license is required.To get more details about the different packages (basic, economy and business) as well as booking process please contact app.industry@doccheck.com. 
+
+For mobile applications a mobile license is required.To get more details about the different packages (basic, economy and business) as well as booking process please contact app.industry@doccheck.com.
 
 ## Installation
 
@@ -35,7 +39,7 @@ pod 'DocCheckAppLoginSDK'
 For the case that the SDK is not yet listed on cocoapods you can always fall back to getting a version directly from this repository like this:
 
 ```ruby
-pod 'DocCheckAppLoginSDK', :git => 'https://github.com/antwerpes/dc_app_login_sdk_ios.git', :tag => '0.1.3'
+pod 'DocCheckAppLoginSDK', :git => 'https://github.com/antwerpes/dc_app_login_sdk_ios.git', :tag => '0.1.4'
 ```
 
 ### Swift Package Manager - experimental
@@ -53,24 +57,27 @@ dependencies: [
 ## Usage
 
 ```swift
-let docCheckAppLogin = DocCheckAppLogin.open(
-    loginId: "YOUR_LOGIN_ID",
+let docCheckAppLoginViewController = DocCheckLogin(
+    with: "YOUR_LOGIN_ID",
     language: "YOUR_SELECTED_LANGUAGE", // optional will default to de
     templateName: "TEMPLATE_NAME" // optional will default to s_mobile
 )
 // optional listener
-docCheckAppLogin.loginSuccesful = {
+docCheckAppLoginViewController.loginSuccesful = {
     // do something on success like dismissing the viewcontroller
 }
-docCheckAppLogin.loginFailed = { error in
+docCheckAppLoginViewController.loginFailed = { error in
     // do something on failed login like showing an error message
 }
-docCheckAppLogin.loginCanceled = {
+docCheckAppLoginViewController.loginCanceled = {
     // do something on user initiated cancel like showing a hint
 }
-docCheckAppLogin.receivedUserInformations = { userInfo in
+docCheckAppLoginViewController.receivedUserInformations = { userInfo in
     // get user information based on what was provided by the server
 }
+
+// expecting self to be a UIViewController
+self.present(docCheckAppLoginViewController, animated: true)
 ```
 
 ## Example
@@ -82,7 +89,7 @@ An example project with integration instructions can be found in the [Example Re
 | Name           |Status   |Description                                                                | Value                                                               | License Type     |
 |----------------|---------|---------------------------------------------------------------------------|---------------------------------------------------------------------|------------------|
 |login_id        |internal |login ID associated with the login                                         |e.g. 200000012345                                                    |all               |
-|appid           |internal |bundle identifier for the current app, is related to the mobile special    |e.g. "bundleidentifier"                                              |all   		    |
+|appid           |internal |bundle identifier for the current app, is related to the mobile special    |e.g. "bundleidentifier"                                              |all         |
 |intdclanguageid |internal |internal ID that tracks the user language                                  |e.g. 148                                                             |all               |
 |strDcLanguage   |internal |iso code that tracks the user language                                     |(for Personal form). One of "de", "en"/"com", "fr", "nl", "it", "es".|all               |
 |uniquekey       |valid    |alphanumerical string that is individual per user, is passed by each login |e.g. abc_abc884e739adf439ed521720acb5b232                            |economy + business|
@@ -90,21 +97,24 @@ An example project with integration instructions can be found in the [Example Re
 |state           |valid    |Oauth2 parameter                                                           |e.g. eHxI902CC3doao1                                                 |economy + business|
 |dc_agreement    |valid    |status of confirmation of the data transfer consent form                   |0 = not confirmed; 1 = confirmed                                     |business          |
 
-Please note that additional parameters can be delivered in case of valid consent for data transfer in combination with an implemented business license. For more Details, please check the OAuth2 documentation. Thats one can be reuqested via app.industry@doccheck.com. 
+Please note that additional parameters can be delivered in case of valid consent for data transfer in combination with an implemented business license. For more Details, please check the OAuth2 documentation. Thats one can be reuqested via app.industry@doccheck.com.
 
+## Parameter Routing
 
-## Parameter Routing 
-Starting with the economy license, a routing by parameter, language or country can be configured. Routing parameters must be configured within CReaM via the login configuration (step 4 "Specials" > configure profession/languag/country routing) 
+Starting with the economy license, a routing by parameter, language or country can be configured. Routing parameters must be configured within CReaM via the login configuration (step 4 "Specials" > configure profession/languag/country routing)
 Within CReaM a individual value can be definied for a certain profession. Those values will be passed via the login framework towards your mobile application.
 
-The parameter can be defined as follows: 
+The parameter can be defined as follows:
+
 ```
 &profession=physician
 ```
+
 ```
 &country=germany
 ```
 
-Watchouts: 
+Watchouts:
+
 - parameter must be configured "paramater=value", otherwise it won't be parsed as an parameter in the response
 - Don't forget to implement a fallback if no parameter is added via CReaM
